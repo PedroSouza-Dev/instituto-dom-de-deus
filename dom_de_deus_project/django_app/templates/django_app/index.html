@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'django_app/css/style.css' %}">
 </head>
 <body>
-    <h1>TESTE PAGINA DJANGO</h1>
+    <header>
+        <div class="main-header">
+            <div class="main-header social-share">
+                <h2>social share</h2>
+            </div>
+            <div class="main-header title">
+                <h2>title</h2>
+            </div>
+            <div class="main-header support">
+                <h2>support</h2>
+            </div>
+            <div class="main-header sheets">
+                <h2>sheets sheets sheets sheets</h2>
+            </div>
+        </div>
+    </header>
+
+
+
+    <footer>
+        <div class="main-footer">
+            <div class="main-footer social-share">
+
+            </div>
+            <div class="main-footer contacts">
+
+            </div>
+            <div class="main-footer support">
+
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
