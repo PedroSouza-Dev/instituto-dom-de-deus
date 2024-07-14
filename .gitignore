@@ -1,0 +1,18 @@
+# Ignorar ambiente virtual
+ddd_project_venv/
+
+# Ignorar pasta ddd-website
+ddd-website/
+
+# Ignorar arquivos de compilação do Python
+*.pyc
+__pycache__/
+
+# Ignorar arquivos de configuração do editor
+.vscode/
+.idea/
+
+# Ignorar arquivos de log e de banco de dados SQLite
+*.log
+db.sqlite3
+
