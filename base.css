@@ -30,7 +30,7 @@ html {
     width: 100%;
     height: 100%;
     position: absolute;
-    scrollbar-width: none;
+    overflow-y: scroll;
 }
 
 /* Aplica a fonte base a todos os elementos de texto */
@@ -103,7 +103,7 @@ h1, h3, h5 {
     margin-bottom: 0;
 }
 */
-.global-header.logo {
+.global-header .logo {
     margin-right: 40px;
 }
 /*
@@ -113,7 +113,7 @@ h1, h3, h5 {
 }
 */
 
-.global-header.social-shares {
+.global-header .social-shares {
     margin-left: 40px;
     text-align: center;
 }
@@ -275,6 +275,34 @@ h1, h3, h5 {
     margin: 0;
 }
 
+.global-footer .social-shares p {
+    color: var(--ddd-white);
+    margin: 0;
+    text-align: center;
+}
+
+.social-shares .footer {
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+  }
+
+.pix-icon-container {
+    display: none;
+}
+
+.qr-code-img {
+    display: block;
+}
+
+#pix-title {
+    display: none;
+}
+
+#pix-copy {
+    display: none;
+}
+
 /*responsividade aparelhos menores*/
 @media (max-width: 1384px) {
     .main-title h1 {
@@ -289,6 +317,18 @@ h1, h3, h5 {
         margin-bottom: 0;
         top: 10px;
         right: 220px;
+    }
+
+    .contact-us {
+        font-size: medium;
+    }
+
+    .contact-us h1 {
+        font-size: x-large;
+    }
+
+    #contacts {
+        gap: 5px;
     }
 }
 
@@ -308,6 +348,10 @@ h1, h3, h5 {
     .social-icon.youtube-social{
         width: 50px; 
         height: 50px;
+    }
+
+    .global-footer {
+        height: 400px;
     }
 }
 
@@ -344,7 +388,7 @@ h1, h3, h5 {
     .follow-us {
         display: none;
     }
-
+    /*
     .social-icon {
         width: 30px; 
         height: 30px;
@@ -354,8 +398,54 @@ h1, h3, h5 {
         width: 35px; 
         height: 35px;
     }
-
+    */
     .carousel-container {
         display: none;
+    }
+
+    .social-shares .footer,
+    .social-shares .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .global-footer {
+        height: 450px;
+    }
+
+    .pix-icon-container {
+        display: block;
+        text-align: center; /* Centraliza o ícone */
+    }
+    
+    .qrcode-donate img {
+        display: none;
+    }
+
+    .pix-icon-container svg {
+        width: 100px;  /* Tamanho ajustável do ícone */
+        height: 100px;
+        margin: 0 auto; /* Centraliza o ícone dentro do container */
+    }
+
+    #pix-title,
+    #pix-copy {
+        display: block;
+        text-align: center;
+        font-family: var(--font-family-base);
+        margin-top: 1rem;
+    }
+
+    #doe-qr {
+        display: none;
+    }
+
+    #pix-copy a {
+        color: var(--ddd-white)
+        fon
+    }
+    
+    #pix-copy a:hover {
+        color: var(--highlighted)
     }
 }
