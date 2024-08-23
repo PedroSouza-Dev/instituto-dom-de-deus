@@ -1,0 +1,361 @@
+/*
+limbo
+*/
+.carousel-container {
+    position: relative;
+    text-align: center;
+  }
+  
+  .carousel-inner img {
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+    margin: 0 auto; /* Centraliza as imagens */
+  }
+  
+  .carousel-footer {
+    color: var(--ddd-white);
+  }
+
+/*caracteristicas gerais do site*/
+:root {
+    --ddd-main-blue: #0E0B86;
+    --ddd-white: #ffffff;
+    --highlighted: #00FFFF;
+    --font-family-base: 'Spline Sans', sans-serif;
+    --font-family-title: 'Black Han Sans', sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    scrollbar-width: none;
+}
+
+/* Aplica a fonte base a todos os elementos de texto */
+body, p, a, ul, ol, li, span, div {
+    font-family: var(--font-family-base);
+}
+
+
+p {
+    text-align: justify;
+}
+
+h1, h3, h5 {
+    font-family: var(--font-family-base);
+    text-align: center;
+}
+
+/*configuracoes da tag header*/
+.global-header {
+    top: 0;
+    position: relative;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--ddd-white);
+    z-index: 1;
+}
+
+.main-title {
+    height: 130px;
+    width: 680px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0.8;
+}
+/*
+.main-title p {
+    position: relative;
+    margin-bottom: 0;
+    top: 10px;
+}
+*/
+
+.main-title p {
+    position: relative;
+    left: 235px;
+    margin: 0;
+}
+
+.main-title h1 {
+    font-size: 100px;
+    font-family: var(--font-family-title);
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+}
+
+.global-header .social-shares p {
+    color: var(--ddd-main-blue);
+    margin: 0;
+    text-align: center;
+}
+
+/*
+.social-shares.header p {
+    color: var(--ddd-main-blue);
+    margin-bottom: 0;
+}
+*/
+.global-header.logo {
+    margin-right: 40px;
+}
+/*
+.global-header .logo img {
+    max-height: 200px;
+    max-width: 180px;
+}
+*/
+
+.global-header.social-shares {
+    margin-left: 40px;
+    text-align: center;
+}
+
+.youtube-social {
+    position: relative;
+}
+
+.global-header .youtube-social {
+    top: -1px;
+}
+
+.main-nav {
+    width: 100%;
+    background-color: var(--ddd-main-blue);
+    text-align: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.main-nav ul {
+    height: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    color: var(--ddd-white);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.main-nav ul li a:hover {
+    color: var(--highlighted);
+}
+/*configuracoes do body*/
+.carousel-image {
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.card-body {
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.roman-list {
+    list-style-type: upper-roman;
+}
+
+.page-name {
+    margin-top: 50px;
+    position: relative;
+}
+
+.container-stud.mt-0 {
+    background-color: var(--ddd-main-blue);
+    width: 100%;
+    position: relative;
+    top: -85px;
+}
+
+.display-3 {
+    font-weight: bold;
+    color: var(--ddd-white);
+    text-align: center;
+}
+
+.global-content {
+    min-height: 600px;
+    background-color: var(--ddd-white);
+}
+
+.hyperlink {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+/*configuracoes do footer*/
+.global-footer {
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    height: 300px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--ddd-main-blue);
+    color: var(--ddd-white);
+}
+
+.global-footer .qrcode-donate,
+.global-footer .contact-us,
+.global-footer .social-shares {
+    width: calc(33.333%);
+    box-sizing: border-box;
+    padding: 20px;
+    display: inline;
+    position: relative;
+}
+
+.qrcode-donate h1 {
+    margin: 0px 0px 5px;
+    text-align: center;
+}
+
+.qrcode-donate {
+    text-align: center;
+}
+
+#contacts {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.2fr 2.8fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.global-footer .social-shares.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-left: 80px;
+}
+
+.global-footer .social-shares.icons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.global-footer .social-shares.icons a img.instagram-social,
+.global-footer .social-shares.icons a img.facebook-social {
+    width: 50px;
+    height: auto;
+}
+
+.global-footer .social-shares.icons a img.youtube-social {
+    width: 70px;
+    height: auto;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.global-footer .youtube-social {
+    margin: 0;
+}
+
+/*responsividade aparelhos menores*/
+@media (max-width: 1384px) {
+    .main-title h1 {
+        font-size: 70px;
+        font-family: var(--font-family-title);
+        text-align: center;
+        width: 100%;
+        margin-top: 0;
+    }
+    .main-title p {
+        position: relative;
+        margin-bottom: 0;
+        top: 10px;
+        right: 220px;
+    }
+}
+
+@media (max-width: 1110px) {
+    /*header*/
+    .main-title h1 {
+        font-size: 50px;
+    }
+    .main-title p {
+        top: 8px;
+        right: 150px;
+    }
+    .social-icon {
+        width: 40px; 
+        height: 40px;
+    }
+    .social-icon.youtube-social{
+        width: 50px; 
+        height: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .global-header .logo {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+    }
+
+    .global-header .logo img {
+        height: 100px;
+        width: 111.11px;
+    }
+
+    .main-title {
+        text-align: center;
+        padding: 0; /* Remove o padding, se houver */
+        margin: 0; /* Remove o margin, se houver */
+    }
+
+    .main-title h1 {
+        font-size: 40px;
+        position: relative;
+    }
+
+    .main-title p {
+        position: relative;
+        left: 50px;
+        top: 10px;
+        margin: 0;
+    }
+
+    .follow-us {
+        display: none;
+    }
+
+    .social-icon {
+        width: 30px; 
+        height: 30px;
+    }
+
+    .social-icon.youtube-social{
+        width: 35px; 
+        height: 35px;
+    }
+
+    .carousel-container {
+        display: none;
+    }
+}
