@@ -1,22 +1,3 @@
-/*
-limbo
-*/
-.carousel-container {
-    position: relative;
-    text-align: center;
-  }
-  
-  .carousel-inner img {
-    width: 800px;
-    height: 600px;
-    object-fit: cover;
-    margin: 0 auto; /* Centraliza as imagens */
-  }
-  
-  .carousel-footer {
-    color: var(--ddd-white);
-  }
-
 /*caracteristicas gerais do site*/
 :root {
     --ddd-main-blue: #0E0B86;
@@ -69,18 +50,12 @@ h1, h3, h5 {
     flex-wrap: wrap;
     flex: 0.8;
 }
-/*
-.main-title p {
-    position: relative;
-    margin-bottom: 0;
-    top: 10px;
-}
-*/
 
 .main-title p {
-    position: relative;
-    left: 235px;
-    margin: 0;
+    position:relative;
+    margin-bottom: 0;
+    top: 10px;
+    left: 278px;
 }
 
 .main-title h1 {
@@ -156,6 +131,22 @@ h1, h3, h5 {
     color: var(--highlighted);
 }
 /*configuracoes do body*/
+.carousel-container {
+    position: relative;
+    text-align: center;
+}
+  
+.carousel-inner img {
+width: 800px;
+height: 600px;
+object-fit: cover;
+margin: 0 auto; /* Centraliza as imagens */
+}
+
+.carousel-footer {
+color: var(--ddd-white);
+}
+
 .carousel-image {
     width: 800px;
     height: 600px;
@@ -240,7 +231,7 @@ h1, h3, h5 {
     gap: 10px;
     align-items: center;
 }
-
+/*
 .global-footer .social-shares.footer {
     display: flex;
     flex-direction: column;
@@ -248,6 +239,11 @@ h1, h3, h5 {
     height: 100%;
     width: 100%;
     margin-left: 80px;
+}
+*/
+.global-footer .social-shares {
+    position: relative;
+    left: 40px;
 }
 
 .global-footer .social-shares.icons {
@@ -356,6 +352,14 @@ h1, h3, h5 {
 }
 
 @media (max-width: 768px) {
+
+    p {
+        margin-top: 2.5rem;
+    }
+
+    h1, h2, h3, h4, h5 {
+        margin: 1rem;
+    }
     .global-header .logo {
         display: flex;
         justify-content: flex-end;
@@ -369,8 +373,8 @@ h1, h3, h5 {
 
     .main-title {
         text-align: center;
-        padding: 0; /* Remove o padding, se houver */
-        margin: 0; /* Remove o margin, se houver */
+        padding: 0;
+        margin: 0; 
     }
 
     .main-title h1 {
@@ -381,36 +385,29 @@ h1, h3, h5 {
     .main-title p {
         position: relative;
         left: 50px;
-        top: 10px;
+        top: 5px;
         margin: 0;
     }
-
+/*
     .follow-us {
         display: none;
     }
-    /*
-    .social-icon {
-        width: 30px; 
-        height: 30px;
-    }
-
-    .social-icon.youtube-social{
-        width: 35px; 
-        height: 35px;
-    }
-    */
+*/
     .carousel-container {
         display: none;
     }
 
-    .social-shares .footer,
     .social-shares .header {
         display: flex;
         flex-direction: column;
     }
 
     .global-footer {
-        height: 450px;
+        height: 750px;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: center;
+        text-align: center;
     }
 
     .pix-icon-container {
@@ -428,6 +425,23 @@ h1, h3, h5 {
         margin: 0 auto; /* Centraliza o ícone dentro do container */
     }
 
+    .global-footer .qrcode-donate,
+    .global-footer .contact-us,
+    .global-footer .social-shares {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .global-footer .social-shares {
+        left: -40px;
+    }
+
+    #contacts {
+        text-align: start;
+        position: relative;
+        left: 25px;
+    }
+
     #pix-title,
     #pix-copy {
         display: block;
@@ -441,11 +455,19 @@ h1, h3, h5 {
     }
 
     #pix-copy a {
-        color: var(--ddd-white)
-        fon
+        color: var(--ddd-white);
     }
     
     #pix-copy a:hover {
-        color: var(--highlighted)
+        color: var(--highlighted);
+        cursor: pointer;
+        
+    }
+}
+
+@media (max-width: 486px) {
+    .main-title h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
     }
 }
